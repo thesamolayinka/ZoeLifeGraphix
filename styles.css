@@ -11,6 +11,7 @@
     --font1: white;
     --font2: rgb(154,0,0);
     --font3: rgb(254,36,0);
+    --shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 body{
     max-width: 100vw;
@@ -33,7 +34,6 @@ header{
 header .Name{
     flex: 1;
     height: 100%;
-    /* background-color: blanchedalmond; */
     display: flex;
     justify-content: start;
     align-items: center;
@@ -51,7 +51,6 @@ header .Name h1{
 header nav{
     flex: 2;
     height: 100%;
-    /* background-color: purple; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,7 +67,6 @@ header nav ul li{
     list-style: none;
     width: 20%;
     height: 50%;
-    /* background-color: blue; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,7 +74,7 @@ header nav ul li{
 header nav ul li a{
     text-decoration: none;
     color: var(--font1);
-    font-size: x-small;
+    font-size: smaller;
     width: 100%;
     height: 100%;
     display: flex;
@@ -91,7 +89,6 @@ header nav ul li a:hover{
 header .GoTo{
     flex: 1;
     height: 100%;
-    /* background-color: violet; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -111,6 +108,186 @@ header .GoTo a{
 header .GoTo a:hover{
     background-color: inherit;
     border: 2px solid var(--bg3);
+    transition: all ease-in-out 0.3s;
+}
+main{
+    width: 100%;
+    height: auto;
+    background-color: var(--bg1);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+main .About_Section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+    gap: 20px;
+}
+main .About_Section h1{
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    font-weight: 500;
+}
+main .About_Section div{
+    width: 100%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20PX;
+}
+main .About_Section div div:nth-child(1){
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 50px;
+}
+main .About_Section div:nth-child(1) p{
+    font-size: large;
+    font-weight: 400;
+    text-align: center;
+}
+main .About_Section div:nth-child(1) p span{
+    color: var(--font2);
+    /* font-size: larger; */
+    font-weight: bold;
+}
+main .About_Section div div:nth-child(2){
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+main .About_Section div:nth-child(2) img{
+    width: 70%;
+    height: 90%;
+    box-shadow: var(--shadow);
+    border-radius: 20px;
+}
+main .Project_Section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 20px;
+    gap: 20px;
+}
+main .Project_Section h1{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    font-weight: 500;
+}
+main .Project_Section .Image_Div{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .Project_Section .Image_Div img{
+    width: 30%;
+    height: auto;
+    box-shadow: var(--shadow);
+    border-radius: 20px;
+}
+main .Project_Section .SeeMoreDesign{
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+main .Project_Section .SeeMoreDesign a{
+    width: 30%;
+    height: 80%;
+    background-color: var(--bg2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    text-decoration: none;
+    color: var(--font1);
+    font-size: small;
+}
+main .Project_Section .SeeMoreDesign a:hover{
+    background-color: var(--bg3);
+    transition: all ease-in-out 0.3s;
+}
+main .Contact_Section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 20px;
+    gap: 20px;
+}
+main .Contact_Section h1{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    font-weight: 500;
+}
+main .Contact_Section .Message_Us_Box{
+    width: 100%;
+    height: auto;
+    display: flex;
+    /* background-color: aqua; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+main .Contact_Section .Message_Us_Box div{
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    font-weight: 500;
+    /* background-color: bisque; */
+    gap: 20px;
+}
+main .Contact_Section .Message_Us_Box div a{
+    text-decoration: none;
+    color: var(--font1);
+    width: 30%;
+    height: 100%;
+    background-color: var(--bg2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: small;
+}
+main .Contact_Section .Message_Us_Box div a:hover{
+    background-color: var(--bg3);
     transition: all ease-in-out 0.3s;
 }
 footer{
@@ -181,6 +358,35 @@ footer div:nth-child(2) p{
     }
     header .GoTo{
         display: none;
+    }
+    main .About_Section{
+        height: auto;
+        gap: 20px;
+    }
+    main .About_Section div{
+        flex-direction: column-reverse;
+        gap: 15px;
+    }
+    main .About_Section div p, main .About_Section div p span{
+        padding: 0px;
+        font-size: medium;
+    }
+    main .Project_Section .Image_Div{
+        flex-direction: column;
+        gap: 20px;
+    }
+    main .Project_Section .Image_Div img{
+        width: 90%;
+    }
+    main .Project_Section .SeeMoreDesign a{
+        width: 50%;
+    }
+    main .Contact_Section .Message_Us_Box div{
+        flex-direction: column;
+        height: 10vh;
+    }
+    main .Contact_Section .Message_Us_Box div a{
+        width: 100%;
     }
     footer{
     height: 20vh;

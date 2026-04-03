@@ -1,0 +1,556 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+:root{
+    --bg1: white;
+    --bg2: rgb(154,0,0);
+    --bg3: rgb(254,36,0);
+    --font1: white;
+    --font2: rgb(154,0,0);
+    --font3: rgb(254,36,0);
+    --shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+body{
+    max-width: 100vw;
+    min-height: 100vh;
+    background-color: var(--bg1);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+header{
+    width: 100%;
+    height: 10vh;
+    background-color: var(--bg2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 25px;
+}
+header .Name{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+header .Name h1{
+    width: 100%;
+    height: 100%;
+    font-size: medium;
+    font-weight: 600;
+    color: var(--font1);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+header nav{
+    flex: 2;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header nav ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+header nav ul li{
+    list-style: none;
+    width: 20%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: var(--font1);
+    font-size: smaller;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header nav ul li a:hover{
+    border-radius: 20px;
+    background-color: var(--bg3);
+    transition: all ease-in-out 0.4s;
+}
+header .GoTo{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .GoTo a{
+    text-decoration: none;
+    color: var(--font1);
+    background-color: var(--bg3);
+    width: 85%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: x-small;
+}
+header .GoTo a:hover{
+    background-color: inherit;
+    border: 2px solid var(--bg3);
+    transition: all ease-in-out 0.3s;
+}
+main{
+    width: 100%;
+    height: auto;
+    background-color: var(--bg1);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+main .Recent_Design_Section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 20px;
+    gap: 20px;
+    background-color: var(--bg2);
+}
+main .Recent_Design_Section h1{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    font-weight: 500;
+    color: var(--font1);
+}
+main .Recent_Design_Section .Image_Div{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+main .Recent_Design_Section .Image_Div img{
+    width: 30%;
+    height: auto;
+    box-shadow: var(--shadow);
+    border-radius: 20px;
+}
+main .New_Month_Section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 20px;
+    gap: 20px;
+}
+main .New_Month_Section h1{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    font-weight: 500;
+}
+main .New_Month_Section .Image_Div{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+main .New_Month_Section .Image_Div img{
+    width: 30%;
+    height: auto;
+    box-shadow: var(--shadow);
+    border-radius: 20px;
+}
+main .New_Week_Section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 20px;
+    gap: 20px;
+}
+main .New_Week_Section h1{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    font-weight: 500;
+}main .New_Week_Section .Image_Div{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+main .New_Week_Section .Image_Div img{
+    width: 30%;
+    height: auto;
+    box-shadow: var(--shadow);
+    border-radius: 20px;
+}
+main .Happy_Sunday_Section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 20px;
+    gap: 20px;
+}
+main .Happy_Sunday_Section h1{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    font-weight: 500;
+}main .Happy_Sunday_Section .Image_Div{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+main .Happy_Sunday_Section .Image_Div img{
+    width: 30%;
+    height: auto;
+    box-shadow: var(--shadow);
+    border-radius: 20px;
+}
+main .TGIF_Section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 20px;
+    gap: 20px;
+}
+main .TGIF_Section h1{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    font-weight: 500;
+}main .TGIF_Section .Image_Div{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+main .TGIF_Section .Image_Div img{
+    width: 30%;
+    height: auto;
+    box-shadow: var(--shadow);
+    border-radius: 20px;
+}
+main .Logo_Section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 20px;
+    gap: 20px;
+}
+main .Logo_Section h1{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    font-weight: 500;
+}main .Logo_Section .Image_Div{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+main .Logo_Section .Image_Div img{
+    width: 30%;
+    height: auto;
+    box-shadow: var(--shadow);
+    border-radius: 20px;
+}
+main .Brand_Flyer_Section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 20px;
+    gap: 20px;
+}
+main .Brand_Flyer_Section h1{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    font-weight: 500;
+}main .Brand_Flyer_Section .Image_Div{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+main .Brand_Flyer_Section .Image_Div img{
+    width: 30%;
+    height: auto;
+    box-shadow: var(--shadow);
+    border-radius: 20px;
+}
+main .Zoe_Life_Tutorial_Section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 20px;
+    gap: 20px;
+}
+main .Zoe_Life_Tutorial_Section h1{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    font-weight: 500;
+}main .Zoe_Life_Tutorial_Section .Image_Div{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+main .Zoe_Life_Tutorial_Section .Image_Div img{
+    width: 30%;
+    height: auto;
+    box-shadow: var(--shadow);
+    border-radius: 20px;
+}
+main .Others_Section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 20px;
+    gap: 20px;
+}
+main .Others_Section h1{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    font-weight: 500;
+}main .Others_Section .Image_Div{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+main .Others_Section .Image_Div img{
+    width: 30%;
+    height: auto;
+    box-shadow: var(--shadow);
+    border-radius: 20px;
+}
+footer{
+    width: 100%;
+    height: 25vh;
+    background-color: black;
+    color: var(--font1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 5px 0px;
+}
+footer div:nth-child(1){
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer div:nth-child(1) a{
+    text-decoration: none;
+    width: 40%;
+    height: 60%;
+    background-color: var(--bg2);
+    color: var(--font1);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: smaller;
+}
+footer div:nth-child(1) a:hover{
+    background-color: var(--bg3);
+    transition: all ease-in-out 0.3s;
+}
+footer div:nth-child(2){
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 0px 25px;
+}
+footer div:nth-child(2) p{
+    font-size: smaller;
+}
+@media screen and (max-width: 1000px){
+    header{
+        height: 15vh;
+        flex-direction: column;
+        padding: 0%;
+    }
+    header .Name{
+        width: 100%;
+        height: 40%;
+        background-color: var(--bg1);
+    }
+    header .Name h1{
+        color: var(--font2);
+        font-size: small;
+        justify-content: center;
+    }
+    header nav{
+        width: 100%;
+        height: 60%;
+    }
+    header .GoTo{
+        display: none;
+    }
+    main .Recent_Design_Section .Image_Div{
+        flex-direction: column;
+        gap: 20px;
+    }
+    main .Recent_Design_Section .Image_Div img{
+        width: 90%;
+    }
+    main .New_Month_Section .Image_Div{
+        flex-direction: column;
+        gap: 20px;
+    }
+    main .New_Month_Section .Image_Div img{
+        width: 90%;
+    }
+    main .New_Week_Section .Image_Div{
+        flex-direction: column;
+        gap: 20px;
+    }
+    main .New_Week_Section .Image_Div img{
+        width: 90%;
+    }
+    main .Happy_Sunday_Section .Image_Div{
+        flex-direction: column;
+        gap: 20px;
+    }
+    main .Happy_Sunday_Section .Image_Div img{
+        width: 90%;
+    }
+    main .Logo_Section .Image_Div{
+        flex-direction: column;
+        gap: 20px;
+    }
+    main .Logo_Section .Image_Div img{
+        width: 90%;
+    }
+    main .TGIF_Section .Image_Div{
+        flex-direction: column;
+        gap: 20px;
+    }
+    main .TGIF_Section .Image_Div img{
+        width: 90%;
+    }
+    main .Brand_Flyer_Section .Image_Div{
+        flex-direction: column;
+        gap: 20px;
+    }
+    main .Brand_Flyer_Section .Image_Div img{
+        width: 90%;
+    }
+    main .Others_Section .Image_Div{
+        flex-direction: column;
+        gap: 20px;
+    }
+    main .Others_Section .Image_Div img{
+        width: 90%;
+    }
+    footer{
+    height: 20vh;
+    }
+    footer div:nth-child(1){
+        padding: 0px 25px;
+    }
+    footer div:nth-child(1) a{
+        width: 100%;
+    }
+}
